@@ -27,7 +27,7 @@ public class SpringBootJsonApplication {
   public CommandLineRunner run() {
     return args -> {
         System.out.println("Instructor");
-        log.info("\ntest");
+        log.info("test\n");
     };
   }
 

@@ -14,7 +14,7 @@ public class SpringController {
     public String index() {
         System.out.println("Instructor");
         log.info("Instructor");
-        return "\ntest";
+        return "test\n";
     }
 
 
