@@ -22,7 +22,7 @@ dependencies {
 }
 
 
-group = 'com.datadog.pej.kafka'
+group = 'com.datadog.pej'
 version = '0.0.1-SNAPSHOT'
 description = 'springbootjson'
 sourceCompatibility = '1.8'
