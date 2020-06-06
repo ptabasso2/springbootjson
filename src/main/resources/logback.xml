@@ -1,0 +1,28 @@
+<configuration>
+<appender name="json" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.contrib.json.classic.JsonLayout">
+        <jsonFormatter
+                class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
+            <prettyPrint>true</prettyPrint>
+        </jsonFormatter>
+        <timestampFormat>yyyy-MM-dd' 'HH:mm:ss.SSS</timestampFormat>
+    </layout>
+</appender>
+<appender name="file" class="ch.qos.logback.core.FileAppender">
+    <file>log/springbootjson.log</file>
+    <layout class="ch.qos.logback.contrib.json.classic.JsonLayout">
+        <jsonFormatter
+                class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
+            <prettyPrint>true</prettyPrint>
+        </jsonFormatter>
+        <timestampFormat>yyyy-MM-dd' 'HH:mm:ss.SSS</timestampFormat>
+    </layout>
+</appender>
+<logger name="commonLogger" level="TRACE">
+<appender-ref ref="json" />
+<appender-ref ref="file" />
+</logger>
+<!--<logger name="fileLogger" level="TRACE">
+    <appender-ref ref="file" />
+</logger>-->
+</configuration>
