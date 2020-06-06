@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class SpringKafkaApplication {
+public class SpringBootJsonApplication {
 
   Logger log = LoggerFactory.getLogger("commonLogger");
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringKafkaApplication.class, args);
+    SpringApplication.run(SpringBootJsonApplication.class, args);
   }
 
   @Bean
